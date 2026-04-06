@@ -2,6 +2,7 @@ import express from 'express'
 import cors from 'cors'
 import dotenv from 'dotenv'
 
+import { warmTrefleCache } from './services/trefle'
 import healthRouter from './routes/health'
 import zoneRouter from './routes/zone'
 import plantsRouter from './routes/plants'
@@ -28,6 +29,10 @@ app.listen(PORT, () => {
   console.log(`  /api/zone?zip=10001`)
   console.log(`  /api/recommendations?zip=10001`)
   console.log(`  /api/plants/:trefleId`)
+
+  // Pre-warm Trefle enrichment cache at startup so no user request ever
+  // triggers a cold-cache burst against the 60 req/min limit.
+  warmTrefleCache().catch((err) => console.error('Trefle warm-up failed:', err))
 })
 
 export default app

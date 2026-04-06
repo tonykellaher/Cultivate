@@ -6,14 +6,16 @@ import plantContent from '../data/plant-content.json'
 
 const TREFLE_BASE = 'https://trefle.io/api/v1'
 
+// One request per second keeps us at 60/min — the plan maximum.
+const TREFLE_REQUEST_INTERVAL_MS = 1000
+
 /**
  * Returns the curated plant list for a given zone tier and month,
  * enriched with Trefle scientific names and IDs where available.
  *
- * Architecture note: Our curated plant-content.json is the source of truth
- * for which plants are recommended (ensures content quality and reliability).
- * Trefle is used as a best-effort enrichment layer — if it is unavailable,
- * the curated data is returned as-is with no user-visible degradation.
+ * Architecture: curated plant-content.json is the source of truth for
+ * recommendations. Trefle is a best-effort enrichment layer — if unavailable,
+ * curated data is returned unchanged with no user-visible degradation.
  */
 export async function getPlantsForTier(tier: ZoneTier, month: string): Promise<Plant[]> {
   const cacheKey = `plants:${tier}:${month}`
@@ -24,7 +26,7 @@ export async function getPlantsForTier(tier: ZoneTier, month: string): Promise<P
   // Fall back to april if month data not yet authored
   const plants: Plant[] = content[tier]?.[month] ?? content[tier]?.['april'] ?? []
 
-  const enriched = await enrichWithTrefle(plants)
+  const enriched = await enrichSequentially(plants)
   await cache.set(cacheKey, enriched, TTL.PLANTS)
   return enriched
 }
@@ -51,24 +53,50 @@ export async function getPlantByTrefleId(trefleId: number): Promise<Record<strin
   return plant
 }
 
+/**
+ * Pre-warms the Trefle enrichment cache for every plant in plant-content.json.
+ * Called once at server startup — spaces requests 1 second apart so the burst
+ * of cold-cache calls never exceeds the 60 req/min plan limit.
+ *
+ * With ~17 unique plants, warm-up completes in ~17 seconds. After that,
+ * all enrichment is served from cache (7-day TTL) with zero Trefle calls.
+ */
+export async function warmTrefleCache(): Promise<void> {
+  const token = process.env.TREFLE_API_KEY
+  if (!token) return
+
+  const content = plantContent as Record<string, Record<string, Plant[]>>
+  const allPlants = Object.values(content).flatMap((months) => Object.values(months).flat())
+  const unique = [...new Map(allPlants.map((p) => [p.name, p])).values()]
+
+  console.log(`Trefle: warming cache for ${unique.length} plants (~${unique.length}s)...`)
+
+  for (const plant of unique) {
+    await enrichSingle(plant, token)
+    await sleep(TREFLE_REQUEST_INTERVAL_MS)
+  }
+
+  console.log('Trefle: cache warm-up complete')
+}
+
 // ---------------------------------------------------------------------------
 // Internal helpers
 // ---------------------------------------------------------------------------
 
 /**
- * For each plant in the curated list, attempts a Trefle name search to
- * populate trefleId and scientificName. Failures are silently swallowed —
- * the plant is returned unchanged if enrichment cannot be completed.
- *
- * Rate limit awareness: one Trefle request per unique plant name.
- * Results are cached for 7 days so the free tier (60 req/min) is
- * only stressed on cold-cache first runs.
+ * Enriches plants one at a time. Sequential — never more than one
+ * in-flight Trefle request at a time, eliminating burst risk.
+ * Cache hits skip the request entirely, so warm-cache runs are instant.
  */
-async function enrichWithTrefle(plants: Plant[]): Promise<Plant[]> {
+async function enrichSequentially(plants: Plant[]): Promise<Plant[]> {
   const token = process.env.TREFLE_API_KEY
   if (!token) return plants
 
-  return Promise.all(plants.map((plant) => enrichSingle(plant, token)))
+  const results: Plant[] = []
+  for (const plant of plants) {
+    results.push(await enrichSingle(plant, token))
+  }
+  return results
 }
 
 async function enrichSingle(plant: Plant, token: string): Promise<Plant> {
@@ -96,4 +124,8 @@ async function enrichSingle(plant: Plant, token: string): Promise<Plant> {
   }
 
   return plant
+}
+
+function sleep(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms))
 }
