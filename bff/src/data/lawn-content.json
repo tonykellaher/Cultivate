@@ -1,0 +1,70 @@
+{
+  "cold": [
+    {
+      "id": "lawn-cold-rake-thatch",
+      "title": "Rake out winter thatch",
+      "description": "Remove dead grass buildup that blocks water and nutrients from reaching the soil. Rake vigorously in both directions before the first mow."
+    },
+    {
+      "id": "lawn-cold-fertilize",
+      "title": "Apply slow-release fertilizer",
+      "description": "Use a balanced 10-10-10 fertilizer once soil temps reach 55 degrees. Applying too early wastes nutrients before cool-season grass is actively growing."
+    },
+    {
+      "id": "lawn-cold-repair",
+      "title": "Repair bare patches",
+      "description": "Loosen bare areas with a rake, apply grass seed matched to your lawn type, and cover lightly with straw to retain moisture until germination."
+    }
+  ],
+  "moderate": [
+    {
+      "id": "lawn-moderate-pre-emergent",
+      "title": "Apply pre-emergent herbicide",
+      "description": "Prevent summer annual weeds like crabgrass and goosegrass by applying pre-emergent before soil temps reach 55 degrees. Timing is everything."
+    },
+    {
+      "id": "lawn-moderate-aerate",
+      "title": "Aerate compacted areas",
+      "description": "Use a core aerator on high-traffic zones to improve water penetration and root depth. Follow with compost topdressing for the best results."
+    },
+    {
+      "id": "lawn-moderate-mow",
+      "title": "Begin weekly mowing at 3 to 4 inches",
+      "description": "Set your mower blade high this time of year. Taller grass shades out weed seedlings and retains moisture as temperatures begin to climb."
+    }
+  ],
+  "warm": [
+    {
+      "id": "lawn-warm-mow",
+      "title": "Begin weekly mowing schedule",
+      "description": "Warm-season grasses — Bermuda, Zoysia, and St. Augustine — are actively growing now. Mow weekly at the recommended height for your grass type."
+    },
+    {
+      "id": "lawn-warm-fertilize",
+      "title": "Apply nitrogen-rich fertilizer",
+      "description": "Warm-season grasses respond strongly to nitrogen in spring. Use a slow-release fertilizer with an N-P-K ratio like 15-0-15 for deep root development."
+    },
+    {
+      "id": "lawn-warm-irrigation",
+      "title": "Check and calibrate irrigation",
+      "description": "Inspect all sprinkler heads for blockages or misalignment. Aim for 1 inch of water per week across all zones, adjusted for local rainfall."
+    }
+  ],
+  "tropical": [
+    {
+      "id": "lawn-tropical-chinch",
+      "title": "Monitor for chinch bugs",
+      "description": "Chinch bugs thrive as temperatures rise. Look for yellowing patches that do not respond to watering — part the grass and inspect near the soil surface."
+    },
+    {
+      "id": "lawn-tropical-fertilize",
+      "title": "Fertilize with high-nitrogen formula",
+      "description": "Tropical grasses are heavy feeders. Apply a slow-release nitrogen fertilizer at the start of the rainy season to fuel rapid, healthy growth."
+    },
+    {
+      "id": "lawn-tropical-trim",
+      "title": "Trim edges and overgrowth",
+      "description": "Tropical growth rates accelerate sharply in April. Edge sidewalks and beds weekly and trim back any grass encroaching into garden beds."
+    }
+  ]
+}

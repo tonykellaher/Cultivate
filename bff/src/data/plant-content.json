@@ -1,0 +1,188 @@
+{
+  "cold": {
+    "april": [
+      {
+        "id": "spinach",
+        "name": "Spinach",
+        "type": "vegetable",
+        "description": "A cool-weather powerhouse that thrives in early spring. Spinach grows quickly and tolerates light frost, making April ideal for cold zones.",
+        "howToPlant": "Sow seeds half an inch deep directly in the garden, 2 inches apart in rows 12 inches apart. Thin seedlings to 4 to 6 inches as they grow.",
+        "careGuide": "Keep soil consistently moist. Apply a nitrogen-rich fertilizer at planting. Use shade cloth to extend the harvest window as temperatures rise.",
+        "harvestTip": "Begin harvesting outer leaves when plants reach 6 inches. Cut or pinch individual leaves rather than pulling the whole plant to keep it producing.",
+        "companionPlants": ["Strawberry", "Radish", "Pea"]
+      },
+      {
+        "id": "lettuce",
+        "name": "Lettuce",
+        "type": "vegetable",
+        "description": "Loose-leaf lettuce varieties mature in 45 to 60 days and prefer the cool, mild temperatures of a cold-zone spring before summer heat triggers bolting.",
+        "howToPlant": "Scatter seeds thinly on the soil surface and press in gently — lettuce needs light to germinate. Space rows 8 inches apart.",
+        "careGuide": "Water lightly but frequently to keep shallow roots moist. Avoid overhead watering in the evening to prevent fungal issues.",
+        "harvestTip": "Harvest outer leaves continuously for a cut-and-come-again yield. Pull the whole head before it bolts as summer heat arrives.",
+        "companionPlants": ["Carrot", "Radish", "Chive"]
+      },
+      {
+        "id": "chives",
+        "name": "Chives",
+        "type": "herb",
+        "description": "One of the first herbs to emerge in spring, chives are cold-hardy, low-maintenance, and productive for years once established.",
+        "howToPlant": "Plant divisions or start from seed a quarter inch deep, 6 inches apart. Chives prefer a sunny to partly shaded spot with well-drained soil.",
+        "careGuide": "Cut back to 2 inches after the first flush to encourage dense regrowth. Divide clumps every 3 years to maintain vigor.",
+        "harvestTip": "Snip leaves with scissors 2 inches above the base. Harvest flowers as they open — they are edible and mildly onion-flavored.",
+        "companionPlants": ["Carrot", "Tomato", "Rose"]
+      },
+      {
+        "id": "pansy",
+        "name": "Pansy",
+        "type": "flower",
+        "description": "Pansies are cool-season stars — their bold faces and frost tolerance make them the go-to cold-zone flower for early spring color.",
+        "howToPlant": "Plant transplants 6 to 8 inches apart in full sun or partial shade. Amend soil with compost before planting for best results.",
+        "careGuide": "Deadhead spent blooms regularly to extend flowering. Feed with a balanced liquid fertilizer every two weeks.",
+        "harvestTip": "Pansy flowers are edible and make elegant garnishes. Harvest in the morning when the blooms are freshly opened.",
+        "companionPlants": ["Snapdragon", "Dusty Miller", "Viola"]
+      }
+    ]
+  },
+  "moderate": {
+    "april": [
+      {
+        "id": "tomato",
+        "name": "Tomato",
+        "type": "vegetable",
+        "description": "The quintessential warm-season vegetable. April is the perfect time to transplant starts in moderate zones after the last frost date has passed.",
+        "howToPlant": "Set transplants deep — bury two-thirds of the stem to encourage a strong root system. Space 24 to 36 inches apart in full sun and install a cage or stake at planting time.",
+        "careGuide": "Water deeply 1 to 2 times per week at the base. Switch to a low-nitrogen, high-phosphorus fertilizer once flowering begins.",
+        "harvestTip": "Harvest when the fruit is fully colored and slightly soft to the touch. Tomatoes left to ripen fully on the vine have the best flavor.",
+        "companionPlants": ["Basil", "Marigold", "Carrot"]
+      },
+      {
+        "id": "pepper",
+        "name": "Pepper",
+        "type": "vegetable",
+        "description": "Sweet and hot peppers thrive in the warming days of a moderate-zone April. They need heat to fruit, so starting with healthy transplants gives them a head start.",
+        "howToPlant": "Plant transplants 18 inches apart in full sun. Peppers prefer slightly acidic, well-draining soil with plenty of organic matter.",
+        "careGuide": "Keep soil evenly moist — inconsistent watering causes blossom drop. Mulch heavily to retain heat and moisture at the root zone.",
+        "harvestTip": "Pick sweet peppers green for crunch or wait for full color for maximum sweetness. For hot varieties, a later harvest means more heat.",
+        "companionPlants": ["Basil", "Carrot", "Tomato"]
+      },
+      {
+        "id": "basil",
+        "name": "Basil",
+        "type": "herb",
+        "description": "Basil loves the warm days of a moderate-zone spring. Plant it near your tomatoes for a classic pairing both in the garden and on the plate.",
+        "howToPlant": "Sow seeds a quarter inch deep after soil temps hit 60 degrees, or set out transplants 12 inches apart in full sun with rich, moist soil.",
+        "careGuide": "Pinch flower buds as they form to keep the plant producing flavorful leaves. Always water at the base to avoid leaf scorch.",
+        "harvestTip": "Harvest leaves from the top down, cutting just above a leaf node each time to encourage bushy branching.",
+        "companionPlants": ["Tomato", "Pepper", "Oregano"]
+      },
+      {
+        "id": "cilantro",
+        "name": "Cilantro",
+        "type": "herb",
+        "description": "Cilantro prefers the mild temperatures of spring before summer heat triggers bolting. Succession sow every 3 weeks for a continuous supply.",
+        "howToPlant": "Direct sow a quarter inch deep, 6 inches apart, in full sun to partial shade. Cilantro dislikes transplanting — always direct sow.",
+        "careGuide": "Keep soil moist during germination. Once established, cilantro is relatively drought-tolerant. Thin to 6 inches apart.",
+        "harvestTip": "Harvest outer leaves once plants reach 6 inches. Once flowers appear, harvest and dry the seeds (coriander) after they turn brown.",
+        "companionPlants": ["Anise", "Spinach", "Cabbage"]
+      },
+      {
+        "id": "zinnia",
+        "name": "Zinnia",
+        "type": "flower",
+        "description": "Zinnias are heat-tolerant, prolific bloomers that attract pollinators through summer. Start seeds now in moderate zones for bold summer color.",
+        "howToPlant": "Direct sow seeds a quarter inch deep after frost risk passes, 6 inches apart in rows. Thin to 12 inches once seedlings establish.",
+        "careGuide": "Water at the base to prevent powdery mildew. Feed monthly with a balanced fertilizer. Zinnias thrive in full sun with at least 6 hours a day.",
+        "harvestTip": "Cut stems in the morning for the longest vase life. The more you cut, the more the plant produces — harvest freely.",
+        "companionPlants": ["Tomato", "Cucumber", "Marigold"]
+      }
+    ]
+  },
+  "warm": {
+    "april": [
+      {
+        "id": "sweet-potato",
+        "name": "Sweet Potato",
+        "type": "vegetable",
+        "description": "Warm-zone gardens are ideal for sweet potatoes. April plantings give slips the long, hot season they need to develop full, sweet tubers.",
+        "howToPlant": "Plant slips (rooted cuttings) 12 to 18 inches apart in raised rows 6 inches high. Full sun and sandy, well-draining soil are essential.",
+        "careGuide": "Water deeply but infrequently once established. Avoid nitrogen-heavy fertilizers — they promote lush foliage at the expense of tubers.",
+        "harvestTip": "Harvest 100 to 120 days after planting. Cure freshly dug tubers at 85 degrees with high humidity for 10 days to convert starches to sugar.",
+        "companionPlants": ["Thyme", "Dill", "Alyssum"]
+      },
+      {
+        "id": "eggplant",
+        "name": "Eggplant",
+        "type": "vegetable",
+        "description": "Eggplant thrives in the heat of warm zones. April transplants will be producing abundantly by midsummer if given consistent warmth and moisture.",
+        "howToPlant": "Set transplants 18 to 24 inches apart in full sun. Eggplant is cold-sensitive — wait until nights consistently stay above 55 degrees.",
+        "careGuide": "Use a balanced fertilizer at planting, switching to low-nitrogen once flowering begins. Consistent moisture is key to tender fruit.",
+        "harvestTip": "Harvest when the skin is glossy and firm. Dull skin indicates the fruit is overripe. Always use pruning shears — do not twist or pull.",
+        "companionPlants": ["Pepper", "Tomato", "Marigold"]
+      },
+      {
+        "id": "lemongrass",
+        "name": "Lemongrass",
+        "type": "herb",
+        "description": "Lemongrass is a warm-climate perennial that thrives in the heat. Plant it in spring and it will grow into a dramatic, fragrant clump by fall.",
+        "howToPlant": "Divide and replant established clumps, or start from pots. Space 2 to 3 feet apart in full sun with rich, moist soil.",
+        "careGuide": "Water regularly during the growing season. Apply a nitrogen-rich fertilizer monthly. Cut back to 6 inches in late fall.",
+        "harvestTip": "Harvest the lower stalk by cutting at soil level or pulling outer stalks free. Use the tender lower portion after removing the tough outer layers.",
+        "companionPlants": ["Basil", "Ginger", "Turmeric"]
+      },
+      {
+        "id": "marigold",
+        "name": "Marigold",
+        "type": "flower",
+        "description": "Marigolds are warm-zone workhorses — they naturally deter nematodes and aphids, attract pollinators, and bloom continuously through the heat.",
+        "howToPlant": "Direct sow a quarter inch deep in full sun, or transplant starts 8 to 10 inches apart after the last frost date has passed.",
+        "careGuide": "Deadhead regularly to encourage continuous bloom. Marigolds are drought-tolerant once established but bloom best with regular watering.",
+        "harvestTip": "Harvest flower heads in full bloom for culinary use or dried arrangements. Petals are edible with a citrusy, slightly peppery flavor.",
+        "companionPlants": ["Tomato", "Pepper", "Cucumber"]
+      }
+    ]
+  },
+  "tropical": {
+    "april": [
+      {
+        "id": "okra",
+        "name": "Okra",
+        "type": "vegetable",
+        "description": "Okra loves tropical heat and humidity. In tropical zones, April planting sets up a long, abundant harvest that continues through summer.",
+        "howToPlant": "Sow seeds 1 inch deep, 12 inches apart in full sun after soil reaches 65 degrees. Soak seeds overnight before planting to improve germination rates.",
+        "careGuide": "Fertilize with a balanced NPK at planting and again when plants reach 12 inches tall. Water consistently — drought causes pods to become tough.",
+        "harvestTip": "Harvest pods when 2 to 4 inches long. Pods become tough and fibrous quickly if left on the plant. Check daily during peak season.",
+        "companionPlants": ["Pepper", "Basil", "Cucumber"]
+      },
+      {
+        "id": "bitter-melon",
+        "name": "Bitter Melon",
+        "type": "vegetable",
+        "description": "A staple of tropical cuisine, bitter melon is a vigorous vining crop that thrives in year-round warm conditions with high humidity.",
+        "howToPlant": "Direct sow or transplant starts after all cold risk passes. Provide a sturdy trellis — vines reach 10 to 12 feet over the season.",
+        "careGuide": "Train vines along the trellis weekly. Feed biweekly with a balanced fertilizer. Keep soil consistently moist but never waterlogged.",
+        "harvestTip": "Harvest while the skin is still green and firm, before the fruit yellows. Younger fruits are less bitter and more versatile for cooking.",
+        "companionPlants": ["Taro", "Lemongrass", "Ginger"]
+      },
+      {
+        "id": "thai-basil",
+        "name": "Thai Basil",
+        "type": "herb",
+        "description": "Thai basil is more heat-tolerant than Italian varieties and thrives in tropical conditions. Its anise-like flavor is essential in Southeast Asian cooking.",
+        "howToPlant": "Transplant starts 12 inches apart in full sun after soil temps stabilize above 65 degrees. Thai basil is more drought-tolerant than sweet basil.",
+        "careGuide": "Pinch flower heads as they appear to extend the leaf production period. The more you harvest, the bushier and more productive the plant becomes.",
+        "harvestTip": "Harvest leaves and stems from the top of the plant. Flowers are also edible and make a beautiful, flavorful garnish.",
+        "companionPlants": ["Lemongrass", "Pepper", "Eggplant"]
+      },
+      {
+        "id": "hibiscus",
+        "name": "Hibiscus",
+        "type": "flower",
+        "description": "Hibiscus is a tropical classic that thrives in year-round warmth. Its large, dramatic flowers are also edible and widely used to make teas and beverages.",
+        "howToPlant": "Plant in full sun, 3 to 5 feet apart. Hibiscus tolerates a range of soils but prefers well-draining, slightly acidic conditions.",
+        "careGuide": "Water deeply 2 to 3 times per week in dry periods. Apply a high-potassium fertilizer during the blooming season to encourage continuous flowers.",
+        "harvestTip": "Harvest flowers in full bloom in the morning. The calyx remaining after petals drop is the part used to make hibiscus tea.",
+        "companionPlants": ["Bird of Paradise", "Plumbago", "Ixora"]
+      }
+    ]
+  }
+}

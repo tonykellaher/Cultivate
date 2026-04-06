@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+bff/node_modules/
+
+# Environment variables — never commit real secrets
+.env
+frontend/.env
+bff/.env
+
+# Build outputs
+dist/
+frontend/dist/
+bff/dist/
+bff/build/
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Vite local overrides
+*.local
+
+# TypeScript build info
+*.tsbuildinfo
