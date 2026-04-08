@@ -24,7 +24,7 @@ function EmptyState() {
         component="p"
         sx={{ fontFamily: '"Lora", serif', mb: 1.5, color: 'text.primary' }}
       >
-        What grows where you are?
+        Grow something great.
       </Typography>
       <Typography variant="body1" color="text.secondary">
         Enter your zip code above to discover what to plant this month.
