@@ -61,7 +61,7 @@ export default function AppBar({ onSearch, zone, loading }) {
           sx={{ display: 'flex', alignItems: 'flex-start', gap: 1, flexGrow: 1, maxWidth: 380 }}
         >
           <TextField
-            placeholder="Enter zip code"
+            placeholder="Enter your zip code"
             value={input}
             onChange={handleChange}
             error={!!inputError}
