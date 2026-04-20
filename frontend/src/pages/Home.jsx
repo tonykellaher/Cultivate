@@ -5,6 +5,7 @@ import Grid from '@mui/material/Grid'
 import Typography from '@mui/material/Typography'
 import Alert from '@mui/material/Alert'
 
+import GrassIcon from '@mui/icons-material/Grass'
 import AppBar from '../components/AppBar'
 import FilterTabs from '../components/FilterTabs'
 import PlantCard from '../components/PlantCard'
@@ -118,14 +119,17 @@ export default function Home() {
               {/* ── Lawn care ─────────────────────────────────────────── */}
               {result.lawnTasks?.length > 0 && (
                 <Box component="section" aria-labelledby="lawn-heading" sx={{ pt: 7 }}>
-                  <Typography
-                    id="lawn-heading"
-                    variant="h6"
-                    component="h2"
-                    sx={{ mb: 2, color: 'text.secondary' }}
-                  >
-                    Lawn Care This Month
-                  </Typography>
+                  <Box sx={{ display: 'flex', alignItems: 'center', gap: 1, mb: 2 }}>
+                    <GrassIcon sx={{ color: 'text.secondary' }} />
+                    <Typography
+                      id="lawn-heading"
+                      variant="h6"
+                      component="h2"
+                      sx={{ color: 'text.secondary' }}
+                    >
+                      Lawn Care This Month
+                    </Typography>
+                  </Box>
                   <Grid container spacing={2}>
                     {result.lawnTasks.map((task) => (
                       <Grid item xs={12} sm={4} key={task.id}>
