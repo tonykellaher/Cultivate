@@ -3,7 +3,7 @@ import MuiAppBar from '@mui/material/AppBar'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import TextField from '@mui/material/TextField'
-import IconButton from '@mui/material/IconButton'
+import Button from '@mui/material/Button'
 import Chip from '@mui/material/Chip'
 import Box from '@mui/material/Box'
 import SearchIcon from '@mui/icons-material/Search'
@@ -75,15 +75,16 @@ export default function AppBar({ onSearch, zone, loading }) {
             disabled={loading}
             sx={{ flexGrow: 1 }}
           />
-          <IconButton
+          <Button
             type="submit"
-            aria-label="Search"
-            disabled={loading}
+            variant="contained"
             color="primary"
-            sx={{ mt: '4px' }}
+            disabled={loading}
+            startIcon={<SearchIcon />}
+            sx={{ fontWeight: 700, height: 40, flexShrink: 0 }}
           >
-            <SearchIcon />
-          </IconButton>
+            Let's Grow
+          </Button>
         </Box>
 
         {/* Zone pill — live region always in DOM so screen readers register it on mount */}

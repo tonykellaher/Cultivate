@@ -48,12 +48,12 @@ export default function PlantCard({ plant, onClick }) {
 
       <CardActions sx={{ px: 2, pb: 2, pt: 0 }}>
         <Button
-          variant="contained"
+          variant="text"
           color="primary"
           size="small"
           onClick={() => onClick(plant)}
           aria-label={`View details for ${plant.name}`}
-          sx={{ borderRadius: '4px', fontWeight: 600 }}
+          sx={{ fontWeight: 700 }}
         >
           Learn More
         </Button>
