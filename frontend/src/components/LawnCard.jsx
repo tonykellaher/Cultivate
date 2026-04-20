@@ -15,10 +15,9 @@ export default function LawnCard({ task }) {
       component="article"
       tabIndex={0}
       sx={{
-        borderLeft: `4px solid ${theme.palette.secondary.main}`,
         height: '100%',
         '&:focus-visible': {
-          outline: `2px solid ${theme.palette.primary.main}`,
+          outline: `0px solid ${theme.palette.primary.main}`,
           outlineOffset: 2,
         },
       }}

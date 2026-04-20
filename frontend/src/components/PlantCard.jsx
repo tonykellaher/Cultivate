@@ -27,7 +27,7 @@ export default function PlantCard({ plant, onClick }) {
   return (
     <Card
       component="article"
-      sx={{ borderTop: `4px solid ${accentColor}`, height: '100%', display: 'flex', flexDirection: 'column' }}
+      sx={{ height: '100%', display: 'flex', flexDirection: 'column' }}
     >
       <CardActionArea
         onClick={() => onClick(plant)}
