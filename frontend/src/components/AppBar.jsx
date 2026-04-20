@@ -92,9 +92,8 @@ export default function AppBar({ onSearch, zone, loading }) {
           {zone && (
             <Chip
               label={`Zone ${zone}`}
-              color="primary"
               size="small"
-              sx={{ fontWeight: 600 }}
+              sx={{ backgroundColor: '#2C4A6E', color: '#fff', fontWeight: 600 }}
             />
           )}
         </Box>

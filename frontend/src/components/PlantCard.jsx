@@ -5,13 +5,11 @@ import Typography from '@mui/material/Typography'
 import Chip from '@mui/material/Chip'
 import Box from '@mui/material/Box'
 import Button from '@mui/material/Button'
-import { useTheme } from '@mui/material/styles'
 
-// Maps plant.type → MUI palette key
-const TYPE_PALETTE_KEY = {
-  vegetable: 'primary',
-  herb:      'secondary',
-  flower:    'success',
+const TYPE_COLOR = {
+  vegetable: '#1F5F5B',
+  herb:      '#B85C2C',
+  flower:    '#4B3869',
 }
 
 /**
@@ -20,9 +18,7 @@ const TYPE_PALETTE_KEY = {
  *   onClick — (plant: Plant) => void
  */
 export default function PlantCard({ plant, onClick }) {
-  const theme = useTheme()
-  const paletteKey = TYPE_PALETTE_KEY[plant.type] || 'primary'
-  const accentColor = theme.palette[paletteKey].main
+  const accentColor = TYPE_COLOR[plant.type] || TYPE_COLOR.vegetable
   const typeLabel = plant.type.charAt(0).toUpperCase() + plant.type.slice(1)
 
   return (

@@ -6,12 +6,11 @@ import IconButton from '@mui/material/IconButton'
 import Divider from '@mui/material/Divider'
 import Chip from '@mui/material/Chip'
 import CloseIcon from '@mui/icons-material/Close'
-import { useTheme } from '@mui/material/styles'
 
-const TYPE_PALETTE_KEY = {
-  vegetable: 'primary',
-  herb:      'secondary',
-  flower:    'success',
+const TYPE_COLOR = {
+  vegetable: '#1F5F5B',
+  herb:      '#B85C2C',
+  flower:    '#4B3869',
 }
 
 const CONTENT_SECTIONS = [
@@ -31,8 +30,7 @@ export default function DetailDrawer({ plant, onClose }) {
   const closeButtonRef = useRef(null)
   const open = !!plant
 
-  const paletteKey = plant ? (TYPE_PALETTE_KEY[plant.type] || 'primary') : 'primary'
-  const accentColor = theme.palette[paletteKey].main
+  const accentColor = plant ? (TYPE_COLOR[plant.type] || TYPE_COLOR.vegetable) : TYPE_COLOR.vegetable
   const typeLabel = plant ? plant.type.charAt(0).toUpperCase() + plant.type.slice(1) : ''
 
   // Move focus to close button when drawer opens
