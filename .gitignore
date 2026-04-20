@@ -27,3 +27,5 @@ bff/build/
 
 *storybook.log
 storybook-static
+.vercel
+.env*.local
