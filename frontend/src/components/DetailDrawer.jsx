@@ -26,7 +26,6 @@ const CONTENT_SECTIONS = [
  *   onClose — () => void
  */
 export default function DetailDrawer({ plant, onClose }) {
-  const theme = useTheme()
   const closeButtonRef = useRef(null)
   const open = !!plant
 
